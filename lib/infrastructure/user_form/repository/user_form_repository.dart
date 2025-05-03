@@ -1,4 +1,3 @@
-// infrastructure/user_form/repository/user_form_repository.dart
 
 import '../../../domain/user_form/entity/user_form_entity.dart';
 import '../../../domain/user_form/repository/user_form_repository.dart';
@@ -26,10 +25,4 @@ class UserFormRepositoryImpl implements UserFormRepository {
   Future<void> deleteUser(int id) async {
     await api.deleteUser(id);
   }
-
-  // @override
-  // Future<List<UserFormEntity>> getUsers() async {
-  //   final dtos = await api.getUsers();
-  //   return dtos.map((dto) => dto.toDomain()).toList();
-  // }
 }

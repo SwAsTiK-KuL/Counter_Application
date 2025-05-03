@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../application/login_form/login_form_bloc.dart';
-import '../../../application/login_form/login_form_event.dart';
-import '../../../application/login_form/login_form_state.dart';
 import '../../presentation/login_form/widget/email_field.dart';
 import '../../presentation/login_form/widget/password_field.dart';
 import '../../presentation/login_form/widget/login_button.dart';
@@ -18,7 +14,7 @@ class LoginFormScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: const _LoginForm(), // Removed inner BlocProvider
+        child: const _LoginForm(),
       ),
     );
   }

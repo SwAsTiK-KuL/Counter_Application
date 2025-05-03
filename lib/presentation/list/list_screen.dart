@@ -105,7 +105,7 @@ class _ListBodyState extends State<_ListBody> {
 
                             if (confirm == true) {
                               try {
-                                await UserFormApi().deleteUser(2); // Replace with resource.id if available
+                                await UserFormApi().deleteUser(2);
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   const SnackBar(content: Text('Deleted successfully')),
                                 );
